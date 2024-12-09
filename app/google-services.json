@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "409184190580",
+    "project_id": "login-fe14e",
+    "storage_bucket": "login-fe14e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409184190580:android:049761efc023b424e2d121",
+        "android_client_info": {
+          "package_name": "com.example.loginsec1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfKSOqo-B2qHRJoYAmeJEf6b0ILqA-omU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409184190580:android:0d91c039495e5341e2d121",
+        "android_client_info": {
+          "package_name": "com.example.pruebafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfKSOqo-B2qHRJoYAmeJEf6b0ILqA-omU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

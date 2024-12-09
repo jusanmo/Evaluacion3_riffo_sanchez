@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventilador"
+    android:padding="20dp"
+    android:id="@+id/main"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/tvTituloVentilador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Configuración del Ventilador"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloVentilador"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Ventilador"
+        app:layout_constraintTop_toBottomOf="@id/tvNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tilNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora (HH:mm)"
+        app:layout_constraintTop_toBottomOf="@id/tvHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura:"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tilHora"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura (°C)"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuardarConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Configuración"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilTemperatura" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerVentiladores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ver Ventiladores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardarConfig" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_navigation"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:layout_editor_absoluteX="-78dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
